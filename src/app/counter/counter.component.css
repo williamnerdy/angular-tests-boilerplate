@@ -1,0 +1,19 @@
+.counter {
+  padding: 5px 10px;
+  border: #ccc 2px solid;
+  border-radius: 4px;
+}
+
+:host button {
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background: #111;
+  border-radius: 4px;
+}
+
+:host span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
