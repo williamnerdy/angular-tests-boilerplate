@@ -1,5 +1,5 @@
 {
-  "name": "angular-jest-boilerplate",
+  "name": "angular-tests-boilerplate",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
