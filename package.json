@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "jest",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -27,12 +29,14 @@
     "@angular-devkit/build-angular": "~0.1100.2",
     "@angular/cli": "~11.0.2",
     "@angular/compiler-cli": "~11.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.1",
     "@testing-library/angular": "^10.3.2",
     "@testing-library/user-event": "^12.8.1",
     "@types/jest": "^26.0.20",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "cypress": "^6.6.0",
+    "cypress-cucumber-preprocessor": "^4.0.1",
     "jest": "^26.6.3",
     "jest-preset-angular": "^8.4.0",
     "karma-coverage": "~2.0.3",
@@ -50,5 +54,9 @@
       "<rootDir>/node_modules/",
       "<rootDir>/dist/"
     ]
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/steps"
   }
 }
